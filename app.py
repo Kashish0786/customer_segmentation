@@ -27,17 +27,23 @@ st.markdown("Interactive dashboard integrating Tableau and Python insights.")
 
 st.subheader("Tableau Dashboard")
 
-# Image file path
-tableau_image_path = "tableau_Dashboard.jpeg"  #img
-
-# Display image in Streamlit
-st.image(tableau_image_path, caption="Customer Segmentation Tableau Dashboard", width=1000)
-
-
-
+# link
 tableau_link = "https://public.tableau.com/views/Book1_17741968575400/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 if st.button("Click to Open Tableau Dashboard"):
     webbrowser.open_new_tab(tableau_link)
+
+st.subheader("Some Images Of Tableau Dashboard")
+    
+# 2x2 Collage
+col1, col2 = st.columns(2, gap="small")
+
+with col1:
+    st.image("img1.png", use_container_width=True)
+    st.image("img2.png", use_container_width=True)
+
+with col2:
+    st.image("img3.png", use_container_width=True)
+
 
 # -------------------------------
 # 5️⃣ KPI Cards (Responsive)
