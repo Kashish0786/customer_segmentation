@@ -12,7 +12,7 @@ def load_pickles():
     hybrid_df = pickle.load(open("hybrid_df.pkl", "rb"))
     scaler = pickle.load(open("scaler.pkl", "rb"))
     segment_map = pickle.load(open("segment_map.pkl", "rb"))
-    final_customer = pickle.load(open("final_customer_Data.pkl", "rb"))
+    final_customer = pickle.load(open("final_customer_data.pkl", "rb"))
     df = pickle.load(open("df.pkl", "rb"))
     kmeans_model = pickle.load(open("kmeans_model.pkl", "rb"))
     return hybrid_df, final_df, rfm_df, scaler, segment_map, final_customer, df, kmeans_model
