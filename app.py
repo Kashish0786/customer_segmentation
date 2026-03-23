@@ -28,10 +28,13 @@ st.markdown("Interactive dashboard integrating Tableau and Python insights.")
 st.subheader("Tableau Dashboard")
 
 # link
-tableau_link = "https://public.tableau.com/views/Book1_17741968575400/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-if st.button("Click to Open Tableau Dashboard"):
-    webbrowser.open_new_tab(tableau_link)
+# tableau_link = "https://public.tableau.com/views/Book1_17741968575400/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+# if st.button("Click to Open Tableau Dashboard"):
+#     webbrowser.open_new_tab(tableau_link)
 
+tableau_link = "https://public.tableau.com/views/Book1_17741968575400/Dashboard1"
+
+st.markdown(f"[👉 Click to Open Tableau Dashboard]({tableau_link})")
 st.subheader("Some Images Of Tableau Dashboard")
     
 # 2x2 Collage
